@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="/src/css/normalize.css" as="style"> <!--Permite cargar con mayor rapides la hoja de normalize css-->
+    <link href="/src/css/normalize.css" rel="stylesheet"> <!-- Permite normalizar el formato en los navegadores web para que las paginas carguen lo mas parecidas posible-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> <!-- Fuente de Google Fonts-->
+    <link rel="preload" href="/src/css/styles.css" as="style"> <!--Permite cargar con mayor rapides la hoja de estilos css-->
+    <link href="/src/css/styles.css" rel="stylesheet" type="text/css"> <!-- Llama la hoja de estilos css-->
+    <title>FrontEnd Store</title>
+</head>
+<body>
+    <header class="header"> <!-- Iniciamos con notacion BEM para CSS por eso la clase y los elementos de la clase se unen con __ -->
+        <a href="index.html">
+            <img class="header__logo" src="/assets/img/logo.png" alt="logotipo">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a> <!-- El modificador "--activo" hace que al cambiar de pagina se note el cambio de color del texto para que el usuario identifique donde se encuentra -->
+    </nav>
+
+    <main class="contenedor">
+        <h1>Nosotros</h1>
+
+        <div class="nosotros">
+            <div class="nosotros__contenido">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit ante ac nisl consequat hendrerit. Integer non libero leo. Aenean eget libero tempor ipsum sollicitudin aliquam vitae eget nibh. Integer vestibulum bibendum rhoncus. Cras venenatis elit eget egestas congue. Sed auctor, quam sit amet convallis tempus, lectus est gravida justo, et consequat erat dolor et orci. Phasellus venenatis, enim sit amet suscipit iaculis, libero quam molestie libero, vitae sodales magna nulla ut nibh. Integer mattis eleifend mattis. Maecenas non diam sed risus lacinia cursus. Nunc bibendum laoreet nunc non interdum.</p>
+                <p>Morbi quis mollis erat, nec facilisis tortor. Phasellus maximus dolor dapibus consequat sollicitudin. Praesent tristique diam mauris, bibendum pulvinar justo euismod in. Donec commodo ultricies felis, vitae porttitor nulla aliquet in. Aliquam facilisis enim ut justo efficitur vehicula. Integer hendrerit aliquet semper.</p>
+            </div>
+            <img class="nosotros__imagen" src="/assets/img/nosotros.jpg" alt="Imagen Nosotros">
+        </div>
+
+    </main>
+
+    <section class="contenedor comprar">
+        <h2 class="comprar__titulo">¿Por que Comprar con Nosotros?</h2>
+
+        <div class="bloques">
+
+            <!-- Inicio Bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="/assets/img/icono_1.png" alt="Porque Comprar">
+                <h3 class="bloque__titulo">El mejor Precio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit ante ac nisl consequat hendrerit. Integer non libero leo. Aenean eget libero tempor ipsum sollicitudin aliquam vitae eget nibh. Integer vestibulum bibendum rhoncus.</p>
+            </div>
+            <!-- Fin de Bloque -->
+
+            <!-- Inicio Bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="/assets/img/icono_2.png" alt="Porque Comprar">
+                <h3 class="bloque__titulo">Para Devs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit ante ac nisl consequat hendrerit. Integer non libero leo. Aenean eget libero tempor ipsum sollicitudin aliquam vitae eget nibh. Integer vestibulum bibendum rhoncus.</p>
+            </div>
+            <!-- Fin de Bloque -->
+
+            <!-- Inicio Bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="/assets/img/icono_3.png" alt="Porque Comprar">
+                <h3 class="bloque__titulo">Envio Gratis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit ante ac nisl consequat hendrerit. Integer non libero leo. Aenean eget libero tempor ipsum sollicitudin aliquam vitae eget nibh. Integer vestibulum bibendum rhoncus.</p>
+            </div>
+            <!-- Fin de Bloque -->
+
+            <!-- Inicio Bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="/assets/img/icono_4.png" alt="Porque Comprar">
+                <h3 class="bloque__titulo">La Mejor Calidad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit ante ac nisl consequat hendrerit. Integer non libero leo. Aenean eget libero tempor ipsum sollicitudin aliquam vitae eget nibh. Integer vestibulum bibendum rhoncus.</p>
+            </div>
+            <!-- Fin de Bloque -->
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los Derechos Reservados 2021</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="/src/css/normalize.css" as="style"> <!--Permite cargar con mayor rapides la hoja de normalize css-->
+    <link href="/src/css/normalize.css" rel="stylesheet"> <!-- Permite normalizar el formato en los navegadores web para que las paginas carguen lo mas parecidas posible-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> <!-- Fuente de Google Fonts-->
+    <link rel="preload" href="/src/css/styles.css" as="style"> <!--Permite cargar con mayor rapides la hoja de estilos css-->
+    <link href="/src/css/styles.css" rel="stylesheet" type="text/css"> <!-- Llama la hoja de estilos css-->
+    <title>FrontEnd Store</title>
+</head>
+<body>
+    <header class="header"> <!-- Iniciamos con notacion BEM para CSS por eso la clase y los elementos de la clase se unen con __ -->
+        <a href="index.html">
+            <img class="header__logo" src="/assets/img/logo.png" alt="logotipo">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a> <!-- El modificador "--activo" hace que al cambiar de pagina se note el cambio de color del texto para que el usuario identifique donde se encuentra -->
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>React JS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="/assets/img/3.jpg" alt="imagen del producto">
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit ante ac nisl consequat hendrerit. Integer non libero leo. Aenean eget libero tempor ipsum sollicitudin aliquam vitae eget nibh. Integer vestibulum bibendum rhoncus.</p>
+                
+                <form class="formulario">
+                    <select class="formulario__campo"> <!-- Permite ingresar un menu de seleccion -->
+                        <option disabled selected>- Seleccionar Talla -</option> <!-- Se le da atributos de "Disabled Selected" para que aparezca la opcion inicial seleccionada -->
+                        <option>Talla S</option>
+                        <option>Talla M</option>
+                        <option>Talla L</option>
+                    </select>
+
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los Derechos Reservados 2021</p>
+    </footer>
+    
+</body>
+</html>

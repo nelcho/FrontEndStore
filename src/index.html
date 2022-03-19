@@ -1,13 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#">
-    <title>Document</title>
+    <link rel="preload" href="/src/css/normalize.css" as="style"> <!--Permite cargar con mayor rapides la hoja de normalize css-->
+    <link href="/src/css/normalize.css" rel="stylesheet"> <!-- Permite normalizar el formato en los navegadores web para que las paginas carguen lo mas parecidas posible-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> <!-- Fuente de Google Fonts-->
+    <link rel="preload" href="/src/css/styles.css" as="style"> <!--Permite cargar con mayor rapides la hoja de estilos css-->
+    <link href="/src/css/styles.css" rel="stylesheet" type="text/css"> <!-- Llama la hoja de estilos css-->
+    <title>FrontEnd Store</title>
 </head>
 <body>
-    <img src="assets/img/webpack-logo.png" alt="WebPack Logo">
+    <header class="header"> <!-- Iniciamos con notacion BEM para CSS por eso la clase y los elementos de la clase se unen con __ -->
+        <a href="index.html">
+            <img class="header__logo" src="/assets/img/logo.png" alt="logotipo">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a> <!-- El modificador "--activo" hace que al cambiar de pagina se note el cambio de color del texto para que el usuario identifique donde se encuentra -->
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Nuestros Productos</h1>
+
+        <div class="grid">
+            
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/1.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">VueJS</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/2.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">AngularJS</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/3.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">ReactJS</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/4.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Redux</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/5.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">NodeJS</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/6.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">SASS</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/7.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">HTML5</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/8.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">GitHub</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/9.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">BulmaCSS</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/10.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">TypeScript</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/11.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Drupal</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/12.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">JavaScript</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/13.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">GraphQL</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <!-- Inicio Producto -->
+            <div class="producto">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="/assets/img/14.jpg" alt="Imagen Camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">WordPress</p>
+                        <p class="producto__precio">$ 25.000</p>
+                    </div>
+                </a>
+            </div>
+            <!--Fin de Producto-->
+
+            <div class="grafico grafico--camisas"></div>
+            <div class="grafico grafico--node"></div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los Derechos Reservados 2021</p>
+    </footer>
+    
 </body>
 </html>

@@ -7,7 +7,7 @@ module.exports = {
   mode: "development",
   
   entry: "./src/index.js",
-  
+
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
@@ -70,12 +70,23 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      inject: true,
-      template: "./src/index.html",
-      filename: "./index.html",
-      
+      //inject: true,
+      filename: "index.html",
+      template: "./src/index.html"
     }),
     
+    new HtmlWebpackPlugin({
+      //inject: true,
+      filename: "nosotros.html",
+      template: "./src/nosotros.html"
+    }),
+
+    new HtmlWebpackPlugin({
+      //inject: true,
+      filename: "producto.html",
+      template: "./src/producto.html"
+    }),
+
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
       ignoreOrder: false,
